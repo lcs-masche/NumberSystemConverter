@@ -15,15 +15,31 @@ print("B: Binary")
 print("O: Octal")
 print("D: Decimal")
 print("H: Hexadecimal")
-print("Enter your choice (B/O/D/H): ", terminator: "") // keep following output on the same line
-let from = readLine()!
 
+//find the value that we convert from
+print("Convert from (B/O/D/H): ", terminator: "") // keep following output on the same line
+let from = readLine()!
+//the value we convert to
+print("Convert to (B/O/D/H): ",terminator: "")
+let to = readLine()!
+//the number we have to convert
+print("Number to convert: ",terminator: "")
+let toConvert = readLine()!
 
 // Process
-print("\(from)")
+
+func firstStep(from: Int, to: Int) -> Int {
+    <#function body#>
+}
 
 
-//use switch statement and 
+
+
+
+
+print("From \(from)")
+print("To \(to)")
+print("With \(toConvert)")
 
 
 
