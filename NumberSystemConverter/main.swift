@@ -57,15 +57,52 @@ if from == ("B") {
     if toConvert.contains("9") || toConvert.contains("8") {
         print("ERROR")
     } else {
-        for character in value2.reversed() {
+        for character in toConvert.reversed() {
             if let digit2 = Double(String(character)) {
                 decimalEquivalent2 += digit2 * pow(base2, exponent2)
                 exponent2 += 1
             }
         }
     }
-    decimalEquivalent2
+    print("\(decimalEquivalent2)")
+}else if from == ("D") {
+    print(toConvert)
+}else if from == ("H") {
+    let base3 = 16.0
+
+    var exponent3 = 0.0
+
+    var decimalEquivilant3 = 0.0
+
+    for character in toConvert.reversed() {
+        if let digit = Double(String(character)) {
+            decimalEquivilant3 += digit * pow(base3, exponent3)
+        } else {
+            switch character {
+            
+            case "A":
+                decimalEquivilant3 += 10.0 * pow(base3, exponent3)
+            case "B":
+                decimalEquivilant3 += 11.0 * pow(base3, exponent3)
+            case "C":
+                decimalEquivilant3 += 12.0 * pow(base3, exponent3)
+            case "D":
+                decimalEquivilant3 += 13.0 * pow(base3, exponent3)
+            case "E":
+                decimalEquivilant3 += 14.0 * pow(base3, exponent3)
+            case "F":
+                decimalEquivilant3 += 15.0 * pow(base3, exponent3)
+                
+            default:
+                break
+                
+            }
+        }
+        exponent3 += 1
+    }
+    print("\(decimalEquivilant3)")
 }
+
 
     
 
